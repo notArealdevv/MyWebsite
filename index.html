@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biraj Poudel | Data Scientist & Mathematician</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1e3a8a',
+              secondary: '#0d9488',
+              dark: '#0f172a',
+              light: '#f8fafc'
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-light text-dark font-sans antialiased">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 opacity-30"></div>
+      <div class="container mx-auto px-6 relative z-10 text-center">
+        <h1 class="text-5xl md:text-7xl font-bold mb-4 animate-fadeIn">Hi, I'm Biraj Poudel <span class="text-secondary">👋</span></h1>
+        <h2 class="text-2xl md:text-3xl text-primary mb-8 animate-fadeIn delay-100">Aspiring Data Scientist & Mathematician</h2>
+        <div class="flex gap-4 justify-center animate-fadeIn delay-200">
+          <a href="#projects" class="px-8 py-3 bg-primary text-white rounded-lg shadow-lg hover:shadow-xl transition-all hover:scale-105">View Projects</a>
+          <a href="#contact" class="px-8 py-3 border-2 border-primary text-primary rounded-lg hover:bg-primary/10 transition-all hover:scale-105">Contact Me</a>
+        </div>
+      </div>
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <i data-feather="chevron-down" class="text-primary w-10 h-10"></i>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-primary">About Me</h2>
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="md:w-1/3 flex justify-center">
+            <div class="w-64 h-64 rounded-full border-4 border-secondary overflow-hidden shadow-xl">
+              <img src="http://static.photos/technology/640x360/42" alt="Biraj Poudel" class="w-full h-full object-cover">
+            </div>
+          </div>
+          <div class="md:w-2/3">
+            <p class="text-lg mb-6">I'm a Mathematics student at the University of Southern Mississippi with a passion for data science and analytics. My journey combines rigorous mathematical thinking with practical data applications.</p>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <i data-feather="book" class="mr-4 text-secondary"></i>
+                <div>
+                  <h3 class="font-semibold">B.S. Mathematics (Applied Economics)</h3>
+                  <p class="text-gray-600">University of Southern Mississippi, Expected May 2028</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <i data-feather="award" class="mr-4 text-secondary"></i>
+                <div>
+                  <h3 class="font-semibold">President's List & Dean's List</h3>
+                  <p class="text-gray-600">Maintaining a 4.0 GPA</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <i data-feather="map-pin" class="mr-4 text-secondary"></i>
+                <div>
+                  <h3 class="font-semibold">Hattiesburg, MS</h3>
+                  <p class="text-gray-600">118 College Drive, MS 39406</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-primary">Technical Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <!-- Programming -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary/10 p-3 rounded-full mr-4">
+                <i data-feather="code" class="text-primary"></i>
+              </div>
+              <h3 class="font-bold">Programming</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                Python
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                SQL
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Data Science -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary/10 p-3 rounded-full mr-4">
+                <i data-feather="database" class="text-primary"></i>
+              </div>
+              <h3 class="font-bold">Data Science</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                Pandas
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                NumPy
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                Scikit-learn
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                TensorFlow
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Data Visualization -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary/10 p-3 rounded-full mr-4">
+                <i data-feather="bar-chart-2" class="text-primary"></i>
+              </div>
+              <h3 class="font-bold">Data Visualization</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                Matplotlib
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                Tableau
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                Manim
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Other Tools -->
+          <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-all">
+            <div class="flex items-center mb-4">
+              <div class="bg-primary/10 p-3 rounded-full mr-4">
+                <i data-feather="tool" class="text-primary"></i>
+              </div>
+              <h3 class="font-bold">Other Tools</h3>
+            </div>
+            <ul class="space-y-2">
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                Git
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                Jupyter
+              </li>
+              <li class="flex items-center">
+                <div class="w-2 h-2 bg-secondary rounded-full mr-2"></div>
+                Excel
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-primary">Featured Projects</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <!-- Project 1 -->
+          <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+            <div class="h-48 bg-gradient-to-r from-primary to-secondary"></div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-4">
+                <h3 class="text-xl font-bold">Customer Churn Prediction Model</h3>
+                <a href="https://github.com/notArealdevv" target="_blank" class="text-primary hover:text-secondary">
+                  <i data-feather="github"></i>
+                </a>
+              </div>
+              <p class="text-gray-600 mb-4">Built a classification model to predict telecom customer churn using Python and Scikit-learn.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Python</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Scikit-learn</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Pandas</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Feature Engineering</span>
+              </div>
+              <a href="#" class="text-secondary font-medium hover:underline flex items-center">
+                Read case study <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Project 2 -->
+          <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
+            <div class="h-48 bg-gradient-to-r from-secondary to-primary"></div>
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-4">
+                <h3 class="text-xl font-bold">Movie Recommendation System</h3>
+                <a href="https://github.com/notArealdevv" target="_blank" class="text-primary hover:text-secondary">
+                  <i data-feather="github"></i>
+                </a>
+              </div>
+              <p class="text-gray-600 mb-4">Developed a recommendation engine using collaborative filtering and similarity metrics.</p>
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Python</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Pandas</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Matrix Factorization</span>
+                <span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">Collaborative Filtering</span>
+              </div>
+              <a href="#" class="text-secondary font-medium hover:underline flex items-center">
+                Read case study <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-primary">Leadership & Achievements</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-6 text-primary border-b pb-2">Leadership</h3>
+            <div class="space-y-6">
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-start mb-4">
+                  <div class="bg-primary/10 p-3 rounded-full mr-4">
+                    <i data-feather="users" class="text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold">Orchid CS Club, President</h4>
+                    <p class="text-gray-600">Bharatpur, Nepal</p>
+                  </div>
+                </div>
+                <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                  <li>Organized coding workshops and mentored peers</li>
+                  <li>Coordinated inter-college technology and programming competitions</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-6 text-primary border-b pb-2">Certifications & Achievements</h3>
+            <div class="space-y-6">
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-start mb-4">
+                  <div class="bg-primary/10 p-3 rounded-full mr-4">
+                    <i data-feather="award" class="text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold">Google Data Analytics Certificate</h4>
+                    <p class="text-gray-600">Coursera</p>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="flex items-start mb-4">
+                  <div class="bg-primary/10 p-3 rounded-full mr-4">
+                    <i data-feather="star" class="text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold">Academic Excellence Scholarship</h4>
+                    <p class="text-gray-600">Full Tuition</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-12 text-primary">Get In Touch</h2>
+        <div class="flex flex-col md:flex-row gap-12">
+          <div class="md:w-1/2">
+            <form class="space-y-6">
+              <div>
+                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent">
+              </div>
+              <div>
+                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+              </div>
+              <button type="submit" class="px-8 py-3 bg-primary text-white rounded-lg shadow-lg hover:bg-primary/90 transition-all w-full md:w-auto">Send Message</button>
+            </form>
+          </div>
+          <div class="md:w-1/2">
+            <div class="bg-gray-50 p-8 rounded-xl h-full">
+              <h3 class="text-xl font-bold mb-6 text-primary">Contact Information</h3>
+              <div class="space-y-6">
+                <div class="flex items-start">
+                  <div class="bg-primary/10 p-3 rounded-full mr-4">
+                    <i data-feather="mail" class="text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold">Email</h4>
+                    <a href="mailto:biraj.poudel@usm.edu" class="text-gray-600 hover:text-secondary">biraj.poudel@usm.edu</a>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="bg-primary/10 p-3 rounded-full mr-4">
+                    <i data-feather="phone" class="text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold">Phone</h4>
+                    <a href="tel:9453355187" class="text-gray-600 hover:text-secondary">(945) 335-5187</a>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="bg-primary/10 p-3 rounded-full mr-4">
+                    <i data-feather="github" class="text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold">GitHub</h4>
+                    <a href="https://github.com/notArealdevv" target="_blank" class="text-gray-600 hover:text-secondary">github.com/notArealdevv</a>
+                  </div>
+                </div>
+                <div class="flex items-start">
+                  <div class="bg-primary/10 p-3 rounded-full mr-4">
+                    <i data-feather="map-pin" class="text-primary"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold">Location</h4>
+                    <p class="text-gray-600">118 College Drive, Hattiesburg, MS 39406</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <custom-footer></custom-footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-primary text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300">
+      <i data-feather="arrow-up"></i>
+    </button>
+
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>feather.replace();</script>
+</body>
+</html>
